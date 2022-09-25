@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH0-1p-d7v">
+                                <rect key="frame" x="10" y="54" width="179" height="215"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <string key="text">Swift - Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3. Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3. Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlP-Df-WSl">
+                                <rect key="frame" x="199" y="54" width="205" height="304.5"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <string key="text">Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3. Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3. Swift - Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3. Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3. Swift ranges are more complex than NSRange, and they didn't get any easier in Swift 3.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K86-uc-7mo">
+                                <rect key="frame" x="10" y="279" width="394" height="100"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gJL-xj-STc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DlP-Df-WSl" firstAttribute="width" secondItem="mH0-1p-d7v" secondAttribute="width" priority="250" id="0uV-3K-fAV"/>
+                            <constraint firstItem="K86-uc-7mo" firstAttribute="top" secondItem="DlP-Df-WSl" secondAttribute="bottom" priority="200" constant="10" id="DQp-qr-ZhI"/>
+                            <constraint firstItem="K86-uc-7mo" firstAttribute="top" secondItem="mH0-1p-d7v" secondAttribute="bottom" priority="250" constant="10" id="RuA-7I-0hr"/>
+                            <constraint firstItem="DlP-Df-WSl" firstAttribute="leading" secondItem="mH0-1p-d7v" secondAttribute="trailing" constant="10" id="jPZ-nZ-BL4"/>
+                            <constraint firstItem="K86-uc-7mo" firstAttribute="trailing" secondItem="DlP-Df-WSl" secondAttribute="trailing" id="juz-YK-HqT"/>
+                            <constraint firstItem="mH0-1p-d7v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="k29-83-YvQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DlP-Df-WSl" secondAttribute="trailing" constant="10" id="kAq-ch-p2d"/>
+                            <constraint firstItem="K86-uc-7mo" firstAttribute="leading" secondItem="mH0-1p-d7v" secondAttribute="leading" id="n2X-lg-fkp"/>
+                            <constraint firstItem="mH0-1p-d7v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nyr-4K-g0j"/>
+                            <constraint firstItem="DlP-Df-WSl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="vxk-1s-j6C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyVW" destination="K86-uc-7mo" id="qtU-iC-Ekx"/>
+                        <outlet property="label1" destination="mH0-1p-d7v" id="ECb-Zq-Jpv"/>
+                        <outlet property="label2" destination="DlP-Df-WSl" id="ktK-Kq-jcU"/>
+                        <outlet property="topToLabel1" destination="RuA-7I-0hr" id="jmk-d3-5g6"/>
+                        <outlet property="topToLabel2" destination="DQp-qr-ZhI" id="zmt-aF-wQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
